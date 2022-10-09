@@ -33,7 +33,7 @@ class AmphibianViewModel : ViewModel() {
 
     // TODO: Create properties to represent MutableLiveData and LiveData for a list of amphibian objects
     private val _amphibians = MutableLiveData<List<Amphibian>>()
-    val amphibianList : LiveData<List<Amphibian>> = _amphibians
+    val amphibiansList : LiveData<List<Amphibian>> = _amphibians
 
     // TODO: Create properties to represent MutableLiveData and LiveData for a single amphibian object.
     //  This will be used to display the details of an amphibian when a list item is clicked
@@ -42,7 +42,7 @@ class AmphibianViewModel : ViewModel() {
 
     // TODO: Create a function that gets a list of amphibians from the api service and sets the
     //  status via a Coroutine
-    fun getAmphibianList(){ // TODO: used to be private
+    fun getAmphibianList(){
         _status.value = AmphibianApiStatus.LOADING
         viewModelScope.launch{
             try{

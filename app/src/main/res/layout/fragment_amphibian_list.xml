@@ -38,7 +38,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            listData="@{viewModel.amphibianList}"
+            listData="@{viewModel.amphibiansList}"
             tools:listitem="@layout/list_view_item" />
 
         <!-- TODO: set the apiStatus binding to the status from the view model -->
