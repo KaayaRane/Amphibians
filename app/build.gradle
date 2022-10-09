@@ -67,6 +67,7 @@ dependencies {
 
     // Moshi
     implementation "com.squareup.moshi:moshi-kotlin:$moshi"
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
     // Retrofit with Moshi Converter
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit"
     implementation "androidx.legacy:legacy-support-v4:$legacy"
